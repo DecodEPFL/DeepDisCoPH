@@ -47,8 +47,9 @@ a distributed H-DNN as the previous example, run:
 where available values for `LAYER` are 1,2,...,100. If `LAYER`=-1, then it is set to <i>N</i>.
 The `LAYER` parameter indicates the layer number at which we consider the loss function is evaluated.
 
-## Examples
-The following gifs show the trajectories of the robots before and after the training of a distributed H-DNN controller.
+## Examples: formation control with collision avoidance
+The following gifs show the trajectories of the robots before and after the training of a distributed H-DNN controller. The goal is to reach the target positions within T = 5 seconds while **avoiding collisions**. 
+
 <p align="center">
 <img src="./figures/trajectories_before_training.gif" alt="robot_trajectories_before_training" width="400"/>
 <img src="./figures/trajectoriesHDNNcontroller.gif" alt="robot_trajectories_after_training_a_distributed_HDNN_controller" width="400"/>
