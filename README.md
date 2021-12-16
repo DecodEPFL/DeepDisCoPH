@@ -1,4 +1,4 @@
-# Deep Distributed Control of Port-Hamiltonian Systems (DeepDisCoPH)
+# De(e)pendable Distributed Control of Port-Hamiltonian Systems (DeepDisCoPH)
 
 This repository is associated to the paper **[1]** and it contains:
 1) The full paper manuscript.
