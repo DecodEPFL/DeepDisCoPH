@@ -63,7 +63,7 @@ We verify that DeepDisCoPH controllers ensure closed-loop stability by design ev
 <img src="./figures/train150.gif" alt="robot_trajectories_50_training" width="266"/>
 <img src="./figures/train225.gif" alt="robot_trajectories_75_training" width="266"/>
 </p>
-Training performed for <i>t</i> in [0,5]. Trajectories shown for <i>t</i> in [0,15]. The extended horizon, i.e. when 5<t<15, is shown with grey background. Partially trained distributed controllers exhibit suboptimal behavior, but never compromise closed-loop system.
+Training performed for <i>t</i> in [0,5]. Trajectories shown for <i>t</i> in [0,15]. The extended horizon, i.e. when t in [5,15], is shown with grey background. Partially trained distributed controllers exhibit suboptimal behavior, but never compromise closed-loop stability.
 
 
 ## References
