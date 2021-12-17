@@ -1,4 +1,4 @@
-# Deep Distributed Control of Port-Hamiltonian Systems (DeepDisCoPH)
+# De(e)pendable Distributed Control of Port-Hamiltonian Systems (DeepDisCoPH)
 
 This repository is associated to the paper **[1]** and it contains:
 1) The full paper manuscript.
@@ -47,13 +47,23 @@ a distributed H-DNN as the previous example, run:
 where available values for `LAYER` are 1,2,...,100. If `LAYER`=-1, then it is set to <i>N</i>.
 The `LAYER` parameter indicates the layer number at which we consider the loss function is evaluated.
 
-## Examples
-The following gifs show the trajectories of the robots before and after the training of a distributed H-DNN controller.
+## Examples: formation control with collision avoidance
+The following gifs show the trajectories of the robots before and after the training of a distributed H-DNN controller. The goal is to reach the target positions within T = 5 seconds while **avoiding collisions**. 
+
 <p align="center">
 <img src="./figures/trajectories_before_training.gif" alt="robot_trajectories_before_training" width="400"/>
 <img src="./figures/trajectoriesHDNNcontroller.gif" alt="robot_trajectories_after_training_a_distributed_HDNN_controller" width="400"/>
 </p>
-Training performed for <i>t</i> in [0,5]. Trajectories shown for <i>t</i> in [0,6], highlighting that robots stay close to the desired position when the time horizon is extended. 
+Training performed for <i>t</i> in [0,5]. Trajectories shown for <i>t</i> in [0,6], highlighting that robots stay close to the desired position when the time horizon is extended (grey background). 
+
+### Early stopping of the training
+We verify that DeepDisCoPH controllers ensure closed-loop stability by design even during exploration. We train the DeepDisCoPH controller for 25\%, 50\% and 75\% of the total number of iterations and report the results in the following gifs.
+<p align="center">
+<img src="./figures/train75.gif" alt="robot_trajectories_25_training" width="266"/>
+<img src="./figures/train150.gif" alt="robot_trajectories_50_training" width="266"/>
+<img src="./figures/train225.gif" alt="robot_trajectories_75_training" width="266"/>
+</p>
+Training performed for <i>t</i> in [0,5]. Trajectories shown for <i>t</i> in [0,15]. The extended horizon, i.e. when 5<t<15, is shown with grey background. Partially trained distributed controllers exhibit suboptimal behavior, but never compromise closed-loop system.
 
 ## References
 [[1]](docs/Report.pdf)
@@ -65,3 +75,4 @@ under review.
 Clara L. Galimberti, Luca Furieri, Liang Xu and Giancarlo Ferrrari Trecate.
 "Hamiltonian Deep Neural Networks Guaranteeing Non-vanishing Gradients by Design,"
 arXiv:2105.13205, 2021.
+
