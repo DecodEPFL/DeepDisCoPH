@@ -57,13 +57,13 @@ The following gifs show the trajectories of the robots before and after the trai
 Training performed for <i>t</i> in [0,5]. Trajectories shown for <i>t</i> in [0,6], highlighting that robots stay close to the desired position when the time horizon is extended. 
 
 ### Early stopping of the training
-The following gifs show the trajectories of the robots after 25%, 50% and 75% of the training of the distributed H-DNN controller.
+We verify that DeepDisCoPH controllers ensure closed-loop stability by design even during exploration. We train the DeepDisCoPH controller for 5\%, 25\%, 50\% and 75\% of the total number of iterations and report the results in the following gifs.
 <p align="center">
 <img src="./figures/train75.gif" alt="robot_trajectories_25_training" width="266"/>
 <img src="./figures/train150.gif" alt="robot_trajectories_50_training" width="266"/>
 <img src="./figures/train225.gif" alt="robot_trajectories_75_training" width="266"/>
 </p>
-Training performed for <i>t</i> in [0,5]. Trajectories shown for <i>t</i> in [0,20].
+Training performed for <i>t</i> in [0,5]. Trajectories shown for <i>t</i> in [0,20]. Partially trained distributed controllers exhibit suboptimal behavior, but never compromise closed-loop system.
 
 ## References
 [[1]](docs/Report.pdf)
