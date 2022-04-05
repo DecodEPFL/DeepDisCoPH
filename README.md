@@ -4,6 +4,8 @@ This repository is associated to the paper **[1]** and it contains:
 1) The full paper manuscript.
 2) The code to reproduce numerical experiments.
 
+This work has been selected for a [spotlight presentation](https://l4dc.stanford.edu/oral-presentations-program/) at the 4th conference on Learning for Dynamics and Control (L4DC), 2022, Stanford University.
+
 ## Summary
 By embracing the compositional properties of port-Hamiltonian (pH) systems, 
 we characterize deep Hamiltonian control policies with <i>built-in</i> 
@@ -67,13 +69,13 @@ Training performed for <i>t</i> in [0,5]. Trajectories shown for <i>t</i> in [0,
 
 
 ## References
-[[1]](docs/Report.pdf)
-Luca Furieri, Clara L. Galimberti, Muhammad Zakwan and Giancarlo Ferrrari Trecate.
+[[1]](https://arxiv.org/abs/2112.09046)
+Luca Furieri, Clara L. Galimberti, Muhammad Zakwan and Giancarlo Ferrari Trecate.
 "Distributed neural network control with dependability guarantees: a compositional port-Hamiltonian approach",
-under review.
+to appear in Learning for Dynamics and Control. PMLR, 2022.
 
-[[2]](https://arxiv.org/pdf/2105.13205.pdf)
-Clara L. Galimberti, Luca Furieri, Liang Xu and Giancarlo Ferrrari Trecate.
+[[2]](https://arxiv.org/abs/2105.13205)
+Clara L. Galimberti, Luca Furieri, Liang Xu and Giancarlo Ferrari Trecate.
 "Hamiltonian Deep Neural Networks Guaranteeing Non-vanishing Gradients by Design,"
 arXiv:2105.13205, 2021.
 
